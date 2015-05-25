@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6B5318859EA97BB636A8732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B533F81216A87853F21C19 /* ViewController.swift */; };
+		C6B5375090C62D033B48551E /* BLECentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B53B5FAB3760666221A49D /* BLECentral.swift */; };
+		C6B5378475849A5F25B4BCEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5365609B299B399A82E17 /* AppDelegate.swift */; };
+		C6B53BE00254A80475662DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B53B146074C0922474E6DB /* Main.storyboard */; };
+		C6B53CF7E7AF03DF3B1F7D5A /* BLEMingleiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B53712CB375C2A668498D8 /* BLEMingleiOSTests.swift */; };
+		C6B53EBBEEF22DD820FED288 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B53BC2F791CF18B27CEC35 /* LaunchScreen.xib */; };
+		C6B53F1817DD2F23C25C7A1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B53F669DA11C1FAF4F7DE4 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6B533792402EEC578E6F23B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6B53155DE36BC07F1E0969F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6B53501502AC80DD49A29CC;
+			remoteInfo = BLEMingleiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6B531CF1BB813835FC07E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6B533F81216A87853F21C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6B534480AC182D05A4B15E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		C6B535513310D10E6D1577F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C6B5365609B299B399A82E17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6B53712CB375C2A668498D8 /* BLEMingleiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEMingleiOSTests.swift; sourceTree = "<group>"; };
+		C6B537A8FA7DD4019EC93EA9 /* BLEMingleiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEMingleiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B53B5FAB3760666221A49D /* BLECentral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECentral.swift; sourceTree = "<group>"; };
+		C6B53B7526F2E72E0A84DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		C6B53C549156A54E0778B8BA /* BLEMingleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEMingleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B53F669DA11C1FAF4F7DE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6B5349EB3D7A54922266B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B53724F3F9FA07BF34FD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6B531652B6EF3ADD201724D = {
+			isa = PBXGroup;
+			children = (
+				C6B53F873D693F3D16B75CB3 /* Products */,
+				C6B53C2544968C1FE8A15F23 /* BLEMingleiOS */,
+				C6B53C01E8710C74FF6A9D35 /* BLEMingleiOSTests */,
+			);
+			sourceTree = "<group>";
+		};
+		C6B53285DA48BB450D9DBE0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6B534480AC182D05A4B15E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6B535E2003C2C5CFEAFF613 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6B53B7526F2E72E0A84DC45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6B53C01E8710C74FF6A9D35 /* BLEMingleiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6B53285DA48BB450D9DBE0E /* Supporting Files */,
+				C6B53712CB375C2A668498D8 /* BLEMingleiOSTests.swift */,
+			);
+			path = BLEMingleiOSTests;
+			sourceTree = "<group>";
+		};
+		C6B53C2544968C1FE8A15F23 /* BLEMingleiOS */ = {
+			isa = PBXGroup;
+			children = (
+				C6B535E2003C2C5CFEAFF613 /* Supporting Files */,
+				C6B53F669DA11C1FAF4F7DE4 /* Images.xcassets */,
+				C6B53BC2F791CF18B27CEC35 /* LaunchScreen.xib */,
+				C6B5365609B299B399A82E17 /* AppDelegate.swift */,
+				C6B53B146074C0922474E6DB /* Main.storyboard */,
+				C6B533F81216A87853F21C19 /* ViewController.swift */,
+				C6B53B5FAB3760666221A49D /* BLECentral.swift */,
+			);
+			path = BLEMingleiOS;
+			sourceTree = "<group>";
+		};
+		C6B53F873D693F3D16B75CB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6B53C549156A54E0778B8BA /* BLEMingleiOS.app */,
+				C6B537A8FA7DD4019EC93EA9 /* BLEMingleiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6B53501502AC80DD49A29CC /* BLEMingleiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B5317EE611F4639FEBA0B2 /* Build configuration list for PBXNativeTarget "BLEMingleiOS" */;
+			buildPhases = (
+				C6B53B1974404B3CED9D8C9E /* Sources */,
+				C6B5349EB3D7A54922266B9C /* Frameworks */,
+				C6B5349A3BA54B31B0849F1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEMingleiOS;
+			productName = BLEMingleiOS;
+			productReference = C6B53C549156A54E0778B8BA /* BLEMingleiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6B5365437F0CC3637422F88 /* BLEMingleiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B536DAF752994516A8545E /* Build configuration list for PBXNativeTarget "BLEMingleiOSTests" */;
+			buildPhases = (
+				C6B53DC15DEE19042920968D /* Sources */,
+				C6B53724F3F9FA07BF34FD28 /* Frameworks */,
+				C6B539F02D193FE677F0461A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6B5336247381F881C1AEBB4 /* PBXTargetDependency */,
+			);
+			name = BLEMingleiOSTests;
+			productName = BLEMingleiOSTests;
+			productReference = C6B537A8FA7DD4019EC93EA9 /* BLEMingleiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6B53155DE36BC07F1E0969F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = BitGarage;
+			};
+			buildConfigurationList = C6B537C117B77E7B70CDEF0C /* Build configuration list for PBXProject "BLEMingleiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C6B531652B6EF3ADD201724D;
+			productRefGroup = C6B53F873D693F3D16B75CB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6B53501502AC80DD49A29CC /* BLEMingleiOS */,
+				C6B5365437F0CC3637422F88 /* BLEMingleiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6B5349A3BA54B31B0849F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B53F1817DD2F23C25C7A1D /* Images.xcassets in Resources */,
+				C6B53EBBEEF22DD820FED288 /* LaunchScreen.xib in Resources */,
+				C6B53BE00254A80475662DB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B539F02D193FE677F0461A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6B53B1974404B3CED9D8C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B5378475849A5F25B4BCEE /* AppDelegate.swift in Sources */,
+				C6B5318859EA97BB636A8732 /* ViewController.swift in Sources */,
+				C6B5375090C62D033B48551E /* BLECentral.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B53DC15DEE19042920968D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B53CF7E7AF03DF3B1F7D5A /* BLEMingleiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6B5336247381F881C1AEBB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6B53501502AC80DD49A29CC /* BLEMingleiOS */;
+			targetProxy = C6B533792402EEC578E6F23B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6B53B146074C0922474E6DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6B531CF1BB813835FC07E49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6B53BC2F791CF18B27CEC35 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6B535513310D10E6D1577F1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6B531D0B00B681BF39BA229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6B5327E691ECDE289A63404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLEMingleiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C6B533752BFFA32759B89B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6B533EDBC0AD071B40ADC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLEMingleiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C6B5371B2B206705EF955C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLEMingleiOS.app/BLEMingleiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BLEMingleiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		C6B53D5010D5DEEDB1258A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLEMingleiOS.app/BLEMingleiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BLEMingleiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6B5317EE611F4639FEBA0B2 /* Build configuration list for PBXNativeTarget "BLEMingleiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B533EDBC0AD071B40ADC30 /* Debug */,
+				C6B5327E691ECDE289A63404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6B536DAF752994516A8545E /* Build configuration list for PBXNativeTarget "BLEMingleiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B5371B2B206705EF955C77 /* Debug */,
+				C6B53D5010D5DEEDB1258A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6B537C117B77E7B70CDEF0C /* Build configuration list for PBXProject "BLEMingleiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B531D0B00B681BF39BA229 /* Debug */,
+				C6B533752BFFA32759B89B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6B53155DE36BC07F1E0969F /* Project object */;
+}

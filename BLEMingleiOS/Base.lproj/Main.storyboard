@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RUy-Y0-0mX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <!--Central View Controller-->
+        <!--Lobby View Controller-->
+        <!--Peripheral View Controller-->
+        <scene sceneID="103-5S-Av1">
+            <objects>
+                <viewController id="RUy-Y0-0mX" customClass="ViewController" customModule="BLEMingleiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fkS-lj-Hu2"/>
+                        <viewControllerLayoutGuide type="bottom" id="h0q-J0-VIM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sWl-Am-Hvi">
+                        <rect key="frame" x="0" y="0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLE Central" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMc-LM-Y3Y">
+                                <rect key="frame" x="16" y="20" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="eg0-LT-bMj"/>
+                                    <constraint firstAttribute="width" constant="343" id="ndR-BP-Q8D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="50"/>
+                                <color key="textColor" alpha="1" colorSpace="calibratedRGB" red="0" green="0" blue="0"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRd-Ll-xmW" text="Touch to type into this box, then click send. Be sure the Peripheral user is 'scanning' before sending your message.">
+                                <rect key="frame" x="16" y="128" width="343" height="173"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31" colorSpace="calibratedRGB"/>
+                                <color key="textColor" alpha="1" colorSpace="calibratedRGB" red="0" green="0" blue="0"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3h-hh-YXt" reversesTitleShadowWhenHighlighted="YES">
+                                <rect key="frame" x="16" y="309" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="o6b-1I-uHL"/>
+                                    <constraint firstAttribute="width" constant="343" id="znt-vZ-2kx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Touch To Send">
+                                    <color key="titleColor" alpha="1" colorSpace="calibratedRGB" red="0" green="0" blue="0"/>
+                                    <color key="titleShadowColor" alpha="1" colorSpace="calibratedRGB" red="0" green="0" blue="0"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="o6b-1I-uHL"/>
+                                        <exclude reference="znt-vZ-2kx"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="sendData:" destination="RUy-Y0-0mX" eventType="touchUpInside" id="3Dn-tn-cEK"/>
+                                </connections>
+                                <inset key="contentEdgeInsets"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="leading" secondItem="sWl-Am-Hvi" secondAttribute="leadingMargin" id="6wz-9r-7gX"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="top" secondItem="UMc-LM-Y3Y" secondAttribute="bottom" constant="8" id="GpE-nO-1WU"/>
+                            <constraint firstAttribute="centerY" secondItem="I3h-hh-YXt" secondAttribute="centerY" id="Kp2-jd-WWv"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="top" secondItem="UMc-LM-Y3Y" secondAttribute="bottom" constant="8" id="Lze-9A-2bR"/>
+                            <constraint firstItem="UMc-LM-Y3Y" firstAttribute="top" secondItem="fkS-lj-Hu2" secondAttribute="bottom" id="NYf-LJ-8Ex"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="trailing" secondItem="sWl-Am-Hvi" secondAttribute="trailingMargin" id="PX8-yL-VGE"/>
+                            <constraint firstAttribute="centerY" secondItem="I3h-hh-YXt" secondAttribute="centerY" id="SKa-2A-LB3"/>
+                            <constraint firstAttribute="centerX" secondItem="I3h-hh-YXt" secondAttribute="centerX" id="VVU-jW-eOG"/>
+                            <constraint firstItem="I3h-hh-YXt" firstAttribute="top" secondItem="hRd-Ll-xmW" secondAttribute="bottom" constant="8" id="Zyp-Xu-suc"/>
+                            <constraint firstAttribute="centerX" secondItem="I3h-hh-YXt" secondAttribute="centerX" id="bWr-hF-TKb"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="trailing" secondItem="sWl-Am-Hvi" secondAttribute="trailingMargin" id="cBt-Qn-sUN"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="leading" secondItem="sWl-Am-Hvi" secondAttribute="leadingMargin" id="fuD-Fd-AdU"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="trailing" secondItem="sWl-Am-Hvi" secondAttribute="trailingMargin" id="fuO-NB-4O3"/>
+                            <constraint firstAttribute="centerX" secondItem="UMc-LM-Y3Y" secondAttribute="centerX" id="fxb-6o-dWb"/>
+                            <constraint firstAttribute="centerX" secondItem="hRd-Ll-xmW" secondAttribute="centerX" id="gd8-bm-8hH"/>
+                            <constraint firstAttribute="centerX" secondItem="I3h-hh-YXt" secondAttribute="centerX" id="iTa-CZ-A3b"/>
+                            <constraint firstItem="I3h-hh-YXt" firstAttribute="top" secondItem="hRd-Ll-xmW" secondAttribute="bottom" constant="8" id="qT3-Cu-qN6"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="top" secondItem="UMc-LM-Y3Y" secondAttribute="bottom" constant="8" id="tLw-fk-qhO"/>
+                            <constraint firstItem="I3h-hh-YXt" firstAttribute="top" secondItem="hRd-Ll-xmW" secondAttribute="bottom" constant="8" id="te7-I7-mkv"/>
+                            <constraint firstAttribute="centerY" secondItem="hRd-Ll-xmW" secondAttribute="centerY" id="tkm-MP-s3Q"/>
+                            <constraint firstItem="I3h-hh-YXt" firstAttribute="top" secondItem="hRd-Ll-xmW" secondAttribute="bottom" constant="8" id="yJg-LJ-E3P"/>
+                            <constraint firstItem="hRd-Ll-xmW" firstAttribute="leading" secondItem="sWl-Am-Hvi" secondAttribute="leadingMargin" id="yts-Ry-OBb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6wz-9r-7gX"/>
+                                <exclude reference="GpE-nO-1WU"/>
+                                <exclude reference="PX8-yL-VGE"/>
+                                <exclude reference="cBt-Qn-sUN"/>
+                                <exclude reference="gd8-bm-8hH"/>
+                                <exclude reference="tLw-fk-qhO"/>
+                                <exclude reference="tkm-MP-s3Q"/>
+                                <exclude reference="yts-Ry-OBb"/>
+                                <exclude reference="SKa-2A-LB3"/>
+                                <exclude reference="VVU-jW-eOG"/>
+                                <exclude reference="Zyp-Xu-suc"/>
+                                <exclude reference="bWr-hF-TKb"/>
+                                <exclude reference="qT3-Cu-qN6"/>
+                                <exclude reference="te7-I7-mkv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textView" destination="hRd-Ll-xmW" id="0SA-Id-XMb"/>
+                    </connections>
+                    <constraints>
+                        <constraint firstItem="h0q-J0-VIM" firstAttribute="top" secondItem="RUy-Y0-0mX" secondAttribute="top" constant="478" id="esR-cW-PjM"/>
+                    </constraints>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tmp-iq-O2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.5" y="810.5"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+    </inferredMetricsTieBreakers>
+</document>
