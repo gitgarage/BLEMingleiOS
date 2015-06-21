@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C6B5318859EA97BB636A8732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B533F81216A87853F21C19 /* ViewController.swift */; };
-		C6B5375090C62D033B48551E /* BLECentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B53B5FAB3760666221A49D /* BLECentral.swift */; };
+		C6B5327D61B61344D39AD70A /* BLEMingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B53290F4EE496024C9E6DC /* BLEMingle.swift */; };
 		C6B5378475849A5F25B4BCEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5365609B299B399A82E17 /* AppDelegate.swift */; };
+		C6B53998A54B598D73E39B10 /* BLECentralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B532DDF8E57F1D39796DBD /* BLECentralDelegate.swift */; };
+		C6B53A2DC8725D2896EE0E7A /* BLEMingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B53290F4EE496024C9E6DC /* BLEMingle.swift */; };
 		C6B53BE00254A80475662DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B53B146074C0922474E6DB /* Main.storyboard */; };
-		C6B53CF7E7AF03DF3B1F7D5A /* BLEMingleiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B53712CB375C2A668498D8 /* BLEMingleiOSTests.swift */; };
+		C6B53BF0410A2118C8757C79 /* BLECentralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B532DDF8E57F1D39796DBD /* BLECentralDelegate.swift */; };
 		C6B53EBBEEF22DD820FED288 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B53BC2F791CF18B27CEC35 /* LaunchScreen.xib */; };
 		C6B53F1817DD2F23C25C7A1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B53F669DA11C1FAF4F7DE4 /* Images.xcassets */; };
 /* End PBXBuildFile section */
@@ -28,13 +30,11 @@
 
 /* Begin PBXFileReference section */
 		C6B531CF1BB813835FC07E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6B53290F4EE496024C9E6DC /* BLEMingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEMingle.swift; sourceTree = "<group>"; };
+		C6B532DDF8E57F1D39796DBD /* BLECentralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECentralDelegate.swift; sourceTree = "<group>"; };
 		C6B533F81216A87853F21C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C6B534480AC182D05A4B15E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		C6B535513310D10E6D1577F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C6B5365609B299B399A82E17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6B53712CB375C2A668498D8 /* BLEMingleiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEMingleiOSTests.swift; sourceTree = "<group>"; };
-		C6B537A8FA7DD4019EC93EA9 /* BLEMingleiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEMingleiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6B53B5FAB3760666221A49D /* BLECentral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECentral.swift; sourceTree = "<group>"; };
 		C6B53B7526F2E72E0A84DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		C6B53C549156A54E0778B8BA /* BLEMingleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEMingleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B53F669DA11C1FAF4F7DE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -63,16 +63,7 @@
 			children = (
 				C6B53F873D693F3D16B75CB3 /* Products */,
 				C6B53C2544968C1FE8A15F23 /* BLEMingleiOS */,
-				C6B53C01E8710C74FF6A9D35 /* BLEMingleiOSTests */,
 			);
-			sourceTree = "<group>";
-		};
-		C6B53285DA48BB450D9DBE0E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C6B534480AC182D05A4B15E6 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C6B535E2003C2C5CFEAFF613 /* Supporting Files */ = {
@@ -81,15 +72,6 @@
 				C6B53B7526F2E72E0A84DC45 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C6B53C01E8710C74FF6A9D35 /* BLEMingleiOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				C6B53285DA48BB450D9DBE0E /* Supporting Files */,
-				C6B53712CB375C2A668498D8 /* BLEMingleiOSTests.swift */,
-			);
-			path = BLEMingleiOSTests;
 			sourceTree = "<group>";
 		};
 		C6B53C2544968C1FE8A15F23 /* BLEMingleiOS */ = {
@@ -101,7 +83,8 @@
 				C6B5365609B299B399A82E17 /* AppDelegate.swift */,
 				C6B53B146074C0922474E6DB /* Main.storyboard */,
 				C6B533F81216A87853F21C19 /* ViewController.swift */,
-				C6B53B5FAB3760666221A49D /* BLECentral.swift */,
+				C6B53290F4EE496024C9E6DC /* BLEMingle.swift */,
+				C6B532DDF8E57F1D39796DBD /* BLECentralDelegate.swift */,
 			);
 			path = BLEMingleiOS;
 			sourceTree = "<group>";
@@ -110,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				C6B53C549156A54E0778B8BA /* BLEMingleiOS.app */,
-				C6B537A8FA7DD4019EC93EA9 /* BLEMingleiOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +132,6 @@
 			);
 			name = BLEMingleiOSTests;
 			productName = BLEMingleiOSTests;
-			productReference = C6B537A8FA7DD4019EC93EA9 /* BLEMingleiOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +187,8 @@
 			files = (
 				C6B5378475849A5F25B4BCEE /* AppDelegate.swift in Sources */,
 				C6B5318859EA97BB636A8732 /* ViewController.swift in Sources */,
-				C6B5375090C62D033B48551E /* BLECentral.swift in Sources */,
+				C6B5327D61B61344D39AD70A /* BLEMingle.swift in Sources */,
+				C6B53998A54B598D73E39B10 /* BLECentralDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6B53CF7E7AF03DF3B1F7D5A /* BLEMingleiOSTests.swift in Sources */,
+				C6B53A2DC8725D2896EE0E7A /* BLEMingle.swift in Sources */,
+				C6B53BF0410A2118C8757C79 /* BLECentralDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

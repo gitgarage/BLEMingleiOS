@@ -2,7 +2,7 @@
 //  BLEMingleiOSTests.swift
 //  BLEMingleiOSTests
 //
-//  Created by Michael O'Riley on 5/25/15.
+//  Created by Michael O'Riley on 5/24/15.
 //  Copyright (c) 2015 BitGarage. All rights reserved.
 //
 
