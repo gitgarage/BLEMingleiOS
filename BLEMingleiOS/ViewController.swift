@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
             while (true)
             {
-                var temp:String = self.bleMingle.lastString as String
+                let temp:String = self.bleMingle.lastString as String
                 if (temp != lastMessage && temp != "")
                 {
                     dispatch_async(dispatch_get_main_queue()) {
@@ -29,14 +29,14 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
 
     @IBAction func sendData(sender: AnyObject) {
-        var dataToSend = textView.text.dataUsingEncoding(NSUTF8StringEncoding)
+        let dataToSend = textView.text.dataUsingEncoding(NSUTF8StringEncoding)
 
         bleMingle.sendDataToPeripheral(dataToSend!)
         textView.text = ""
     }
 
     func updateView(message: String) {
-        var textView2 = self.view.viewWithTag(2) as UITextView
+        let textView2 = self.view.viewWithTag(2) as! UITextView
         textView2.text = message
     }
 
@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         super.didReceiveMemoryWarning()
     }
 
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        self.view.endEditing(true)
-    }
+//    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+//        self.view.endEditing(true)
+//    }
 }
