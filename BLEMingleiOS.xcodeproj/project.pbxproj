@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A54F71897C7FE5B88982F08 /* BLEMingleiOS.jar in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F1C9288A15D79C013564 /* BLEMingleiOS.jar */; };
 		C6B5318859EA97BB636A8732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B533F81216A87853F21C19 /* ViewController.swift */; };
 		C6B5327D61B61344D39AD70A /* BLEMingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B53290F4EE496024C9E6DC /* BLEMingle.swift */; };
 		C6B5378475849A5F25B4BCEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5365609B299B399A82E17 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A54F1C9288A15D79C013564 /* BLEMingleiOS.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = BLEMingleiOS.jar; sourceTree = "<group>"; };
 		C6B531CF1BB813835FC07E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6B53290F4EE496024C9E6DC /* BLEMingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEMingle.swift; sourceTree = "<group>"; };
 		C6B532DDF8E57F1D39796DBD /* BLECentralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECentralDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				C6B533F81216A87853F21C19 /* ViewController.swift */,
 				C6B53290F4EE496024C9E6DC /* BLEMingle.swift */,
 				C6B532DDF8E57F1D39796DBD /* BLECentralDelegate.swift */,
+				1A54F1C9288A15D79C013564 /* BLEMingleiOS.jar */,
 			);
 			path = BLEMingleiOS;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				C6B53F1817DD2F23C25C7A1D /* Images.xcassets in Resources */,
 				C6B53EBBEEF22DD820FED288 /* LaunchScreen.xib in Resources */,
 				C6B53BE00254A80475662DB5 /* Main.storyboard in Resources */,
+				1A54F71897C7FE5B88982F08 /* BLEMingleiOS.jar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
