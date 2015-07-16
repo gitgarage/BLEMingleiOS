@@ -121,21 +121,24 @@ class BLEMingle: NSObject, CBPeripheralManagerDelegate, CBCentralManagerDelegate
             {
                 var hexString = chop[4...7] + chop[12...19] + chop[21...26]
                 var datas = hexString.dataFromHexadecimalString()
-                var string = NSString(data: datas!, encoding: NSUTF8StringEncoding) as! String
-                if (!contains(usedList, string))
+                var string = NSString(data: datas!, encoding: NSUTF8StringEncoding) as String?
+                if (string == nil) {
+                    println("String is nil! hexString was \(hexString)")
+                } else if (!contains(usedList, string!))
                 {
-                    usedList.append(string)
-                    if (count(string) == 9 && string[count(string)-1...count(string)-1] == "-")
+                    println("String is \(string!)")
+                    usedList.append(string!)
+                    if (count(string!) == 9 && string![count(string!)-1...count(string!)-1] == "-")
                     {
-                        finalString = finalString + string[0...count(string)-2]
+                        finalString = finalString + string![0...count(string!)-2]
                     }
                     else
                     {
-                        lastString = finalString + string + "\n"
+                        lastString = finalString + string! + "\n"
                         print(lastString)
                         finalString = ""
                         usedList = newList
-                        usedList.append(string)
+                        usedList.append(string!)
                     }
                 }
             }

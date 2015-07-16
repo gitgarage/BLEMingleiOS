@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="NO" useTraitCollections="YES" initialViewController="RUy-Y0-0mX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useTraitCollections="YES" initialViewController="RUy-Y0-0mX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,73 +12,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMc-LM-Y3Y" text="BLEMingle" textAlignment="center">
-                                <rect key="frame" x="0" y="20" width="321" height="100"/>
-                                <constraints>
-                                </constraints>
-                                <nil key="highlightedColor"/>
-                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BLEMingle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMc-LM-Y3Y">
+                                <rect key="frame" x="0.0" y="20" width="321" height="100"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" misplaced="YES" text="Touch to type into this box." id="hRd-Ll-xmW">
-                                <rect key="frame" x="0" y="128" width="321" height="106"/>
+                                <rect key="frame" x="0.0" y="128" width="321" height="106"/>
                                 <color key="backgroundColor" red="0.38800000000000001" green="0.38800000000000001" blue="0.38800000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="100" height="0.0"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <constraints>
-                                </constraints>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="100%" height="0.0"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ivs-M1-6oy" tag="2">
-                                <rect key="frame" x="0" y="282" width="321" height="199"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" id="ivs-M1-6oy">
+                                <rect key="frame" x="0.0" y="282" width="321" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
-                                <constraints>
-                                </constraints>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="I3h-hh-YXt">
-                                <rect key="frame" x="0" y="234" width="321" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="I3h-hh-YXt">
+                                <rect key="frame" x="0.0" y="234" width="321" height="50"/>
                                 <color key="backgroundColor" red="0.184" green="0.184" blue="0.184" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                </constraints>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="100" height="0.0"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 <state key="normal" title="Send Message">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="o6b-1I-uHL"/>
-                                        <exclude reference="znt-vZ-2kx"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="sendData:" destination="RUy-Y0-0mX" eventType="touchUpInside" id="3Dn-tn-cEK"/>
                                 </connections>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="100%" height="0.0"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="SKa-2A-LB3"/>
-                                <exclude reference="Zyp-Xu-suc"/>
-                                <exclude reference="qT3-Cu-qN6"/>
-                                <exclude reference="te7-I7-mkv"/>
-                                <exclude reference="6wz-9r-7gX"/>
-                                <exclude reference="PX8-yL-VGE"/>
-                                <exclude reference="cBt-Qn-sUN"/>
-                                <exclude reference="gd8-bm-8hH"/>
-                                <exclude reference="tkm-MP-s3Q"/>
-                                <exclude reference="yts-Ry-OBb"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
