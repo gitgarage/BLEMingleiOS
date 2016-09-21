@@ -272,13 +272,6 @@ class BLEMingle: NSObject, CBPeripheralManagerDelegate, CBCentralManagerDelegate
         datastring = piece
     }
     
-    func delayit(delay:Double, closure:()->()) {
-        let when = DispatchTime.now() + delay * Double(NSEC_PER_SEC)
-        DispatchQueue.main.asyncAfter(deadline: when){
-            // wait
-        }
-    }
-    
     func startAdvertisingToPeripheral() {
         var allTime:DispatchTime = DispatchTime.now();
         if (dataToSend != nil)
