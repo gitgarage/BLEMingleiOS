@@ -7,5 +7,5 @@ import Foundation
 import CoreBluetooth
 
 protocol BLECentralDelegate {
-    func didDiscoverPeripheral(peripheral: CBPeripheral!)
+    func didDiscoverPeripheral(_ peripheral: CBPeripheral!)
 }
