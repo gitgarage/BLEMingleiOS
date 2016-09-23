@@ -258,47 +258,38 @@ class BLEMingle: NSObject, CBPeripheralManagerDelegate, CBCentralManagerDelegate
         startAdvertisingToPeripheral()
     }
     
-    func sendPart() {
-        var piece:String = datastring
-        peripheralManager.stopAdvertising()
-        let bingo = piece.characters.count
-        let part:String = bingo > 14 ? piece[0..<14] + "-" : piece[0..<bingo-1] + " "
-        if (piece.characters.count > 15)
-        {
-            piece = piece[15..<piece.characters.count-1]
-        }
-        let messageUUID = StringToUUID(hex: part)
-        peripheralManager.startAdvertising([CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: messageUUID)]])
-        datastring = piece
-    }
-    
     func startAdvertisingToPeripheral() {
-        var allTime:DispatchTime = DispatchTime.now();
         if (dataToSend != nil)
         {
             datastring = NSString(data:dataToSend as Data, encoding:String.Encoding.utf8.rawValue) as! String
             datastring = "iPhone: " + datastring
-            if (datastring.characters.count > 15)
-            {
-                for j in 0 ..< datastring.characters.count/15 {
-                    let i = Double(j)
-                    let delay = i/10.000 * Double(NSEC_PER_SEC)
-                    
-                    let when = DispatchTime.now() + delay
-                    allTime = when
-                    DispatchQueue.main.asyncAfter(deadline: when){
-                        () -> Void in self.sendPart();
-                    }
-                }
-            }
-            else
-            {
-                let messageUUID = StringToUUID(hex: datastring)
-                if !peripheralManager.isAdvertising {
-                    peripheralManager.startAdvertising([CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: messageUUID)]])
-                }
+            
+            sendMessage(message: datastring)
+        }
+    }
+    
+    func sendMessage(message: String)
+    {
+        let count = message.characters.count;
+        var part:String
+
+        if (count > 15)
+        {
+            let delay = 10.000 * Double(NSEC_PER_SEC)
+            let when = DispatchTime.now() + delay
+            part = message[0..<14] + "-"
+            
+            DispatchQueue.main.asyncAfter(deadline: when){
+                () -> Void in self.sendMessage(message: message[15..<count-1]);
             }
         }
+        else
+        {
+            part = message
+        }
+
+        let messageUUID = StringToUUID(hex: part)
+        peripheralManager.startAdvertising([CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: messageUUID)]])
     }
     
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
