@@ -145,7 +145,6 @@
 				ORGANIZATIONNAME = BitGarage;
 				TargetAttributes = {
 					C6B53501502AC80DD49A29CC = {
-						DevelopmentTeam = J26D86F62R;
 						LastSwiftMigration = 0800;
 					};
 				};
